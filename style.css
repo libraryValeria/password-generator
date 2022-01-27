@@ -1,3 +1,6 @@
-#prompts{
+#upper-prompt{
+    display:none;
+}
+#lower-prompt{
     display:none;
 }

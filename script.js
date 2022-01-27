@@ -9,7 +9,7 @@ const passwordSpecial = document.querySelector("#checkSpecial");
 // * ... NEXT function of button "generate"
 // when I click on "generate" a window pops up
 function openForm(){
-    document.getElementById("prompts").style.display = "block";
+    document.getElementById("upper-prompt").style.display = "block";
 }
 // then I am asked if i'd like an upper case in my password
 // then I input "y" or "n"

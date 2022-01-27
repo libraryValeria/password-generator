@@ -28,6 +28,7 @@
     </div>
     <!-- pop-up window for criteria prompts-->
     <div id="prompts">
+      <!--upper-prompt-->
       <div id="upper-prompt" class="criteria">
         <div class="criteria-content">
           <div class="criteria-form">
@@ -44,9 +45,19 @@
           </div>
         </div>
       </div>
+      <!--lower-prompt-->
       <div id="lower-prompt" class="criteria">
         <div class="criteria-content">
-          <div class="criteria-form"></div>
+          <div class="criteria-form">
+            <a class="close-tab">&times;</a>
+              <form action="/">
+                  <h3>criteria</h3>
+                  <div>
+                      <p>would you like to include...
+                        <br> <b>lowercase </b>letters?</p>
+                      <input type="radio" name="answer" value="yes">yes
+                      <input type="radio" name="answer" value="no">no
+          </div>
         </div>
       </div>
       <div id="number-prompt" class="criteria">
@@ -60,6 +71,8 @@
         </div>
       </div>
     </div>
+    <!--number-prompt-->
+    <!--symbol-prompt-->
   </body>
 </html>
 <script src="script.js"></script>
