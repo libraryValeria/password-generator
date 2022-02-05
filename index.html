@@ -1,80 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>password generator</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header><h1>password generator.</h1></header>
-    <!-- card for resulted password -->
-    <div class="card">
-      <div class="card-header">
-        <h2>generate a password.</h2>
-      </div>
-      <div class="card-body">
-        <textarea
-          readonly
-          id="password"
-          placeholder="your secure password"
-          aria-label="generated passsword"
-        ></textarea>
-      </div>
-      <div class="card-footer">
-        <button id="generate" class="button" data-modal="prompts" onclick= "openForm()">generate password</button>
-      </div>
-    </div>
-    <!-- pop-up window for criteria prompts-->
-    <div id="prompts">
-      <!--upper-prompt-->
-      <div id="upper-prompt" class="criteria">
-        <div class="criteria-content">
-          <div class="criteria-form">
-              <form action="/">
-                  <h3>criteria</h3>
-                  <div>
-                      <p>would you like to include...
-                        <br> <b>uppercase </b>letters?</p>
-                      <input type="radio" name="answer" value="yes"
-                      onclick="nextForm()">yes
-                      <input type="radio" name="answer" value="no"
-                      onclick="nextForm()">no
-                  </div>
-              </form>
-          </div>
-        </div>
-      </div>
-      <!--lower-prompt-->
-      <div id="lower-prompt" class="criteria">
-        <div class="criteria-content">
-          <div class="criteria-form">
-              <form action="/">
-                  <h3>criteria</h3>
-                  <div>
-                      <p>would you like to include...
-                        <br> <b>lowercase </b>letters?</p>
-                      <input type="radio" name="answer" value="yes">yes
-                      <input type="radio" name="answer" value="no">no
-                  </div>
-          </div>
-        </div>
-      </div>
-          <!--number-prompt-->
-      <div id="number-prompt" class="criteria">
-            <div class="criteria-content">
-              <div class="criteria-form"></div>
-            </div>
-          </div>
-          <!--symbol-prompt-->
-      <div id="symbol-prompt" class="criteria">
-            <div class="criteria-content">
-              <div class="criteria-form"></div>
-            </div>
-        </div>
-    </div>
 
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>password generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>password generator.</h1>
+  </header>
+  <!-- card for resulted password -->
+  <div class="card">
+    <div class="card-header">
+      <h2>generate a password.</h2>
+    </div>
+    <div class="card-body">
+      <textarea readonly id="password" placeholder="your secure password" aria-label="generated passsword"></textarea>
+    </div>
+    <div class="card-footer">
+      <button id="generate" class="button" data-modal="prompts" onclick="openForm()">generate password</button>
+    </div>
+  </div>
+  <!-- pop-up window for criteria prompts-->
+  <div id="prompts">
+    <!--upper-prompt-->
+    <div id="upper-prompt" class="criteria">
+      <div class="criteria-content">
+        <div class="criteria-form">
+          <form action="/">
+            <h3>criteria</h3>
+            <div>
+              <p>would you like to include...
+                <br> <b>uppercase </b>letters?
+              </p>
+              <input type="radio" name="answer" value="yes" onclick="lowerForm()" >yes
+              <input type="radio" name="answer" value="no"onclick="lowerForm()"  >no
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--lower-prompt-->
+    <div id="lower-prompt" class="criteria">
+      <div class="criteria-content">
+        <div class="criteria-form">
+          <form action="/">
+            <h3>criteria</h3>
+            <div>
+              <p>would you like to include...
+                <br> <b>lowercase </b>letters?
+              </p>
+              <input type="radio" name="answer" value="yes" onclick="numberForm()">yes
+              <input type="radio" name="answer" value="no"onclick="numberForm()">no
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--number-prompt-->
+    <div id="number-prompt" class="criteria">
+      <div class="criteria-content">
+        <div class="criteria-form">
+          <form action="/">
+            <h3>criteria</h3>
+            <div>
+              <p>would you like to include...
+                <br> <b>numbers</b>?
+              </p>
+              <input type="radio" name="answer" value="yes" onclick="symbolForm()">yes
+              <input type="radio" name="answer" value="no" onclick="symbolForm()">no
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--symbol-prompt-->
+    <div id="symbol-prompt" class="criteria">
+      <div class="criteria-content">
+        <div class="criteria-form">
+          <form action="/">
+            <h3>criteria</h3>
+            <div>
+              <p>would you like to include...
+                <br><b>symbols</b>?
+              </p>
+              <input type="radio" name="answer" value="yes" onclick="nextForm()">yes
+              <input type="radio" name="answer" value="no" onclick="nextForm()">no
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="script.js"></script>
+</body>
+
+</html>
