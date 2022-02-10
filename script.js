@@ -20,7 +20,7 @@ var inputArr = Array.from(userInput);
 console.log(userInput);
 // GET random cases for each criteria
 var upperCase = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-var lowerCase = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+var lowerCase = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 var numberCase = String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 
 function symbolsCase() {
@@ -48,17 +48,23 @@ function lowerForm() {
 function numberForm() {
   prompts[2].style.display = "block";
   prompts[1].style.display = "none";
+  for (i = 0; i < inputArr.length; i+= 2) {
+    if (inputArr[i].checked) {
+      console.log(lowerCase);
+    } 
+  }
+
 }
 // next criteria presents to the user (SYMBOLS)
 function symbolForm() {
   prompts[3].style.display = "block";
   prompts[2].style.display = "none";
-}
-
-function inputNo(){
-  for (i = 1; i < inputArr.length; i+= 2){
-    if(inputArr[i].checked){
-      console.log("howdy partner ;)");
-    }
+  for (i = 0; i < inputArr.length; i+= 2) {
+    if (inputArr[i].checked) {
+      console.log(numberCase);
+    } 
   }
 }
+
+// function generate random ***
+// function for 'no' input (???)
