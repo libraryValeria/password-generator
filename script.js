@@ -15,9 +15,10 @@ var prompts = [upperPrompt, lowerPrompt, numberPrompt, symbolPrompt];
 
 // collect user inputs for each criteria
 var userInput = document.getElementsByName("answer");
+// convert user input node list to array
 var inputArr = Array.from(userInput);
+// console.log(userInput);
 
-console.log(userInput);
 // GET random cases for each criteria
 var upperCase = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 var lowerCase = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -37,10 +38,10 @@ function lowerForm() {
   prompts[1].style.display = "block";
   prompts[0].style.display = "none";
   // get random on click if user checked yes
-  for (i = 0; i < inputArr.length; i+= 2) {
+  for (i = 0; i < inputArr.length; i += 2) {
     if (inputArr[i].checked) {
       console.log(upperCase);
-    } 
+    }
   }
 }
 
@@ -48,21 +49,20 @@ function lowerForm() {
 function numberForm() {
   prompts[2].style.display = "block";
   prompts[1].style.display = "none";
-  for (i = 0; i < inputArr.length; i+= 2) {
+  for (i = 0; i < inputArr.length; i += 2) {
     if (inputArr[i].checked) {
       console.log(lowerCase);
-    } 
+    }
   }
-
 }
 // next criteria presents to the user (SYMBOLS)
 function symbolForm() {
   prompts[3].style.display = "block";
   prompts[2].style.display = "none";
-  for (i = 0; i < inputArr.length; i+= 2) {
+  for (i = 0; i < inputArr.length; i += 2) {
     if (inputArr[i].checked) {
       console.log(numberCase);
-    } 
+    }
   }
 }
 
