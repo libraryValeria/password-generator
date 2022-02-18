@@ -72,7 +72,7 @@
                 <br> <b>numbers</b>?
               </p>
               <input type="radio" name="answer" value="yes" onclick="symbolForm()">yes
-              <input type="radio" name="answer" value="no" onclick="Form()">no
+              <input type="radio" name="answer" value="no" onclick="symbolForm()">no
             </div>
         </div>
       </div>
@@ -87,8 +87,23 @@
               <p>would you like to include...
                 <br><b>symbols</b>?
               </p>
-              <input type="radio" name="answer" value="yes" onclick="nextForm()">yes
-              <input type="radio" name="answer" value="no" onclick="nextForm()">no
+              <input type="radio" name="answer" value="yes" onclick="symbolsCase()">yes
+              <input type="radio" name="answer" value="no" onclick="symbolsCase()">no
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--length-prompt-->
+    <div id="length-prompt" class="criteria">
+      <div class="criteria-content">
+        <div class="criteria-form">
+          <form action="/">
+            <h3>criteria</h3>
+            <div>
+              <p>provide the desired
+                <br><b>length (8 - 26 characters)</b> for your password...
+              </p>
+              <input type="number" name="answer" min="8" max="26" onclick="length()"> 
             </div>
         </div>
       </div>

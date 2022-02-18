@@ -1,17 +1,16 @@
 // constants for password criterias
 const passwordText = document.querySelector("#password");
 
-const passwordUpper = document.querySelector("#checkUpper");
-
 // when I click on "generate" prompts pop up for the user
 // variables for forms
 var upperPrompt = document.getElementById("upper-prompt");
 var lowerPrompt = document.getElementById("lower-prompt");
 var numberPrompt = document.getElementById("number-prompt");
 var symbolPrompt = document.getElementById("symbol-prompt");
+var lengthPrompt = document.getElementById("length-prompt");
 
 // array for all prompts
-var prompts = [upperPrompt, lowerPrompt, numberPrompt, symbolPrompt];
+var prompts = [upperPrompt, lowerPrompt, numberPrompt, symbolPrompt, lengthPrompt];
 
 // collect user inputs for each criteria
 var userInput = document.getElementsByName("answer");
@@ -23,11 +22,6 @@ var inputArr = Array.from(userInput);
 var upperCase = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 var lowerCase = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 var numberCase = String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-
-function symbolsCase() {
-  const symbols = "!@#$%^&*(){}[]+=<>?/";
-  return symbols[Math.floor(Math.random() * symbols.length)];
-}
 
 // open criteria form (UPPERCASE)
 function openForm() {
@@ -43,6 +37,7 @@ function lowerForm() {
       console.log(upperCase);
     }
   }
+  return upperCase;
 }
 
 // next criteria presents to the user (NUMBERS)
@@ -54,6 +49,7 @@ function numberForm() {
       console.log(lowerCase);
     }
   }
+  return lowerCase;
 }
 // next criteria presents to the user (SYMBOLS)
 function symbolForm() {
@@ -64,7 +60,24 @@ function symbolForm() {
       console.log(numberCase);
     }
   }
+  return numberCase;
+}
+// function generates a random symbol if user checks yes
+function symbolsCase() {
+  const symbols = "!@#$%^&*(){}[]+=<>?/";
+  var randoSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+  prompts[4].style.display = "block";
+  prompts[3].style.display = "none";
+  for (i = 0; i < inputArr.length; i += 2) {
+    if (inputArr[i].checked) {
+      console.log(randoSymbol);
+    }
+  }
+  return randoSymbol;
 }
 
-// function generate random ***
-// function for 'no' input (???)
+// length function-- potential for loop
+function length(){
+
+}
+// generate random password
