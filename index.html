@@ -22,7 +22,7 @@
       <textarea readonly id="password" placeholder="your secure password" aria-label="generated passsword"></textarea>
     </div>
     <div class="card-footer">
-      <button id="generate" class="button" data-modal="prompts" onclick="openForm()">generate password</button>
+      <button id="generate-button" data-modal="prompts" onclick="openForm()">generate password</button>
     </div>
   </div>
   <!-- pop-up window for criteria prompts-->
@@ -103,7 +103,8 @@
               <p>provide the desired
                 <br><b>length (8 - 26 characters)</b> for your password...
               </p>
-              <input type="number" name="answer" min="8" max="26" onclick="length()"> 
+              <input type="number" name="answer" min="8" max="26"> 
+              <button id="generate"  onclick="lengthCase()">generate</button>
             </div>
         </div>
       </div>

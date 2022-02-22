@@ -26,6 +26,7 @@ var numberCase = String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 // open criteria form (UPPERCASE)
 function openForm() {
   prompts[0].style.display = "block";
+  
 }
 // next criteria presents to the user (LOWERCASE)
 function lowerForm() {
@@ -77,7 +78,8 @@ function symbolsCase() {
 }
 
 // length function-- potential for loop
-function length(){
+function lengthCase(){
+  console.log("howdy partner ;)");
 
 }
 // generate random password
