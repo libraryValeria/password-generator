@@ -10,7 +10,13 @@ var symbolPrompt = document.getElementById("symbol-prompt");
 var lengthPrompt = document.getElementById("length-prompt");
 
 // array for all prompts
-var prompts = [upperPrompt, lowerPrompt, numberPrompt, symbolPrompt, lengthPrompt];
+var prompts = [
+  upperPrompt,
+  lowerPrompt,
+  numberPrompt,
+  symbolPrompt,
+  lengthPrompt,
+];
 
 // collect user inputs for each criteria
 var userInput = document.getElementsByName("answer");
@@ -26,7 +32,6 @@ var numberCase = String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 // open criteria form (UPPERCASE)
 function openForm() {
   prompts[0].style.display = "block";
-  
 }
 // next criteria presents to the user (LOWERCASE)
 function lowerForm() {
@@ -76,10 +81,30 @@ function symbolsCase() {
   }
   return randoSymbol;
 }
+// GET users length input
+var lengthInput = document.getElementById("length-input").addEventListener("input", function(){
+  console.log(this.value);
+});
+
 
 // length function-- potential for loop
-function lengthCase(){
-  console.log("howdy partner ;)");
 
+// *** ya girl is stuck on how to get the users input of character length then having it loop that many times *** //
+/*function lengthCase() {
+  var i = document.querySelector("number");
+  for (i = 8; i <=26; i++) {
+    const randoPassword = document.getElementById("#generate");
+switch(randoPassword){
+  case upperCase:
+    console.log(upperCase);
+    case lowerCase:
+      console.log(lowerCase);
+      case numberCase:
+        console.log(numberCase);
+        case randoSymbol:
+          console.log(randoSymbol);
+          break;
 }
+  }
+} */
 // generate random password

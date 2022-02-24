@@ -103,8 +103,10 @@
               <p>provide the desired
                 <br><b>length (8 - 26 characters)</b> for your password...
               </p>
-              <input type="number" name="answer" min="8" max="26"> 
-              <button id="generate"  onclick="lengthCase()">generate</button>
+              <form class="length-form">
+              <input id="length-generate" type="radio" name="answer" >
+              <input id="length-input"  type="textarea" min="8" max="26" placeholder="input number first"> 
+            </form>
             </div>
         </div>
       </div>
