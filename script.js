@@ -81,12 +81,15 @@ function symbolsCase() {
   }
   return randoSymbol;
 }
-// GET users length input
+// GET users length input to console.log
 var lengthInput = document.getElementById("length-input").addEventListener("input", function(){
-  console.log(this.value);
+  let length = Number(this.value);
+  console.log(length);
 });
 
-
+function lengthCase(){
+  console.log("howdy partner ;)");
+}
 // length function-- potential for loop
 
 // *** ya girl is stuck on how to get the users input of character length then having it loop that many times *** //
