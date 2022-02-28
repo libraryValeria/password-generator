@@ -82,19 +82,22 @@ function symbolsCase() {
   return randoSymbol;
 }
 // GET users length input to console.log
-var lengthInput = document
-  .getElementById("length-input")
-  .addEventListener("input", function () {
-    let length = Number(this.value);
-    console.log(length);
-  });
+var lengthInput = document.getElementById("length-input");
 
-function lengthCase() {
-  // testing for loop for users length input
-  for (i = 0; i < 26; i++) {
+var length = lengthInput.addEventListener("input", function () {
+  var number = Number(this.value);
+  console.log(number);
+  for (i = 0; i < number; i++) {
     console.log("howdy partner ;)");
   }
-}
+});
+
+/*function lengthCase() {
+  // testing for loop for users length input
+  for (i = 0; i < length; i++) {
+    console.log("howdy partner ;)");
+  }
+}*/
 // length function-- potential for loop
 
 // *** ya girl is stuck on how to get the users input of character length then having it loop that many times *** //
