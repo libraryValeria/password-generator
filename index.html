@@ -87,8 +87,10 @@
               <p>would you like to include...
                 <br><b>symbols</b>?
               </p>
-              <input type="radio" name="answer" value="yes" onclick="symbolsCase()">yes
-              <input type="radio" name="answer" value="no" onclick="symbolsCase()">no
+              <input type="radio" name="answer" value="yes" onclick="lengthForm()">yes
+            </input> 
+              <input type="radio" name="answer" value="no" onclick="lengthForm()">no
+            </input> 
             </div>
         </div>
       </div>
@@ -101,11 +103,11 @@
             <h3>criteria</h3>
             <div>
               <p>provide the desired
-                <br><b>length (8 - 26 characters)</b> for your password...
+                <br><b>length</b> for your password...
               </p>
               <form class="length-form">
               <input id="length-generate" type="radio" name="answer" onclick="lengthCase()">
-              <input id="length-input"  type="textarea" min="8" max="26" placeholder="input number first"> 
+              <input id="length-input"  type="textarea" min="8" max="26" placeholder="(8 - 26 characters)"> 
             </form>
             </div>
         </div>
