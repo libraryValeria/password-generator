@@ -27,9 +27,8 @@
               <p>would you like to include...
                 <br> <b>uppercase </b>letters?
               </p>
-              <input type="radio" name="answer" value="yes" onclick="lowerForm()" >yes
-              <input
-               type="radio" name="answer" value="no"onclick="lowerForm()">no
+              <button type="button" class="btn btn-outline-success"onclick="lowerForm()">yes</button>
+              <button type="button" class="btn btn-outline-danger"onclick="lowerForm()">no</button>
             </div>
           </form>
         </div>
@@ -44,8 +43,8 @@
               <p>would you like to include...
                 <br> <b>lowercase </b>letters?
               </p>
-              <input type="radio" name="answer" value="yes" onclick="numberForm()">yes
-              <input type="radio" name="answer" value="no"onclick="numberForm()">no
+              <button type="button" class="btn btn-outline-success"onclick="numberForm()">yes</button>
+              <button type="button" class="btn btn-outline-danger"onclick="numberForm()">no</button>
             </div>
         </div>
       </div>
@@ -60,8 +59,8 @@
               <p>would you like to include...
                 <br> <b>numbers</b>?
               </p>
-              <input type="radio" name="answer" value="yes" onclick="symbolForm()">yes
-              <input type="radio" name="answer" value="no" onclick="symbolForm()">no
+              <button type="button" class="btn btn-outline-success"onclick="symbolForm()">yes</button>
+              <button type="button" class="btn btn-outline-danger"onclick="symbolForm()">no</button>
             </div>
         </div>
       </div>
@@ -75,10 +74,8 @@
               <p>would you like to include...
                 <br><b>symbols</b>?
               </p>
-              <input type="radio" name="answer" value="yes" onclick="lengthForm()">yes
-            </input> 
-              <input type="radio" name="answer" value="no" onclick="lengthForm()">no
-            </input> 
+              <button type="button" class="btn btn-outline-success"onclick="lengthForm()">yes</button>
+              <button type="button" class="btn btn-outline-danger"onclick="lengthForm()">no</button>
             </div>
         </div>
       </div>
@@ -93,7 +90,6 @@
                 <br><b>length</b> for your password...
               </p>
               <form class="length-form">
-              <input id="length-generate" type="radio" name="answer" onclick="lengthCase()">
               <input id="length-input"  type="textarea" min="8" max="26" placeholder="(8 - 26 characters)"> 
             </form>
             </div>

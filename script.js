@@ -1,6 +1,6 @@
 // constants for password criterias
 const passwordText = document.querySelector("#password");
-
+var generateBtn = document.getElementById('generate-button');
 // when I click on "generate" prompts pop up for the user
 // variables for forms
 var upperPrompt = document.getElementById("upper-prompt");
@@ -30,7 +30,7 @@ var numberCase = String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 
 // open criteria form (UPPERCASE)
 function openForm() {
-  var generateBtn = document.getElementById('generate-button');
+
   generateBtn.style.display = "none";
   prompts[0].style.display = "block";
   if(choice[0]){
@@ -63,7 +63,7 @@ var symbolCase = symbols[Math.floor(Math.random() * symbols.length)];
 function lengthForm() {
   prompts[4].style.display = "block";
   prompts[3].style.display = "none";
-  
+
 }
 
 // GET users length input to console.log
