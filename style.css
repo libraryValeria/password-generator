@@ -1,15 +1,29 @@
+.main-page{
+    text-align: center;
+    margin-top: 10%;
+}
 #upper-prompt{
     display:none;
+    margin-top:3%;
+    text-align:center;
 }
 #lower-prompt{
     display:none;
+    margin-top:3%;
+    text-align:center;
 }
 #number-prompt{
     display:none;
+    margin-top:3%;
+    text-align:center;
 }
 #symbol-prompt{
     display:none;
+    margin-top:3%;
+    text-align:center;
 }
 #length-prompt{
     display:none;
+    margin-top:3%;
+    text-align:center;
 }
