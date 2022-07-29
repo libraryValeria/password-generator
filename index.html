@@ -13,7 +13,7 @@
   <div class="col main-page">
     <h1>password generator.</h1>
     <div class="col row-3">
-      <button id="generate-button" type="button" class="btn btn-outline-primary btn-lg" onclick="openForm()">generate password</button>
+      <button id="generate-button" type="button" class="btn btn-outline-primary btn-lg" onclick="openForm()">generate password ➜</button>
     </div>
   </div>
   <!-- pop-up window for criteria prompts-->
@@ -85,13 +85,16 @@
       <div class="criteria-content">
         <div class="criteria-form">
           <form action="/">
-            <div>
+            <div class="col">
               <p>provide the desired
                 <br><b>length</b> for your password...
               </p>
               <form class="length-form">
               <input id="length-input"  type="textarea" min="8" max="26" placeholder="(8 - 26 characters)"> 
             </form>
+            </div>
+            <div class="col">
+              <button id="generate" type="button" class="btn btn-outline-primary btn-lg" onclick="">➜</button>
             </div>
         </div>
       </div>
