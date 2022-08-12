@@ -27,6 +27,9 @@
     margin-top:3%;
     text-align:center;
 }
-#generate{
+#generate-arrow{
     margin-top: 3%;
+}
+#password{
+    display:none;
 }

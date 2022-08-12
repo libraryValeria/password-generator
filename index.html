@@ -89,16 +89,34 @@
               <p>provide the desired
                 <br><b>length</b> for your password...
               </p>
-              <form class="length-form">
-              <input id="length-input"  type="textarea" min="9" max="27" placeholder="(9 - 27 characters)"> 
-            </form>
             </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-5">
+                <div class="input-group">
+                  <input id="length-input"  type="" class="form-control" placeholder="(9 - 27 characters)">
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+           <div class="row">
             <div class="col">
-              <button id="generate" type="button" class="btn btn-outline-primary btn-lg" onclick="">➜</button>
+              <button id="generate-arrow" type="button" class="btn btn-outline-primary btn-lg" onclick="lengthTest()">➜</button>
             </div>
+           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!--generated password page-->
+  <div  id="password"class="container-fluid row">
+    <div class="col"></div>
+    <div class="col-6">
+      <div class="input-group">
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    </div>
+    <div class="col"></div>
   </div>
 <script src="script.js"></script>
 <script src="criteria.js"></script>
