@@ -67,7 +67,7 @@ function password() {
   passwordPage.style.display = "block";
 }
 
-//for loop with boudaries test
+//length boudaries test
 function lengthTest() {
   // get user length input
   var lengthInput = document.getElementById("length-input").value;
