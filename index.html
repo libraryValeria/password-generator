@@ -25,10 +25,10 @@
           <form action="/">
             <div>
               <p>would you like to include...
-                <br> <b>uppercase </b>letters?
+                <br><b>uppercase</b>letters?
               </p>
-              <button type="button" class="btn btn-outline-success"onclick="lowerForm()">yes</button>
-              <button type="button" class="btn btn-outline-danger"onclick="lowerForm()">no</button>
+              <button type="button" class="btn btn-outline-success"onclick="lowerForm(); yesUpper();">yes</button>
+              <button type="button" class="btn btn-outline-danger"onclick="lowerForm(); noUpper();">no</button>
             </div>
           </form>
         </div>
@@ -109,14 +109,16 @@
     </div>
   </div>
   <!--generated password page-->
-  <div  id="password"class="container-fluid row">
-    <div class="col"></div>
-    <div class="col-6">
-      <div class="input-group">
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+  <div id="password"class="container-fluid">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class=" col card">
+        <div id="the-password"class="card-body">
+          password goes here.
+        </div>
       </div>
+      <div class="col-2"></div>
     </div>
-    <div class="col"></div>
   </div>
 <script src="script.js"></script>
 <script src="criteria.js"></script>
